@@ -1,0 +1,82 @@
+:root {
+    --color-variable-green: hsl(75, 94%, 57%);
+    --color-variable-lightgrey: hsl(0, 0%, 20%);
+    --color-variable-mediumgrey: hsl(0, 0%, 12%);
+    --color-variable-darkgrey: hsl(0, 0%, 8%);
+  }
+  
+  @font-face {
+    font-family: "Inter Variable";
+    src: url("fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  }
+  
+  body {
+    font-family: "Inter Variable", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: var(--color-variable-darkgrey);
+  }
+  
+  .card-container {
+    position: relative;
+    width: 320px; /* Increased width for better proportions */
+    background: var(--color-variable-mediumgrey);
+    border-radius: 16px;
+    text-align: center;
+    padding: 20px 20px 40px; /* Bottom padding for better spacing */
+    margin: 0 auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Added subtle shadow */
+  }
+  
+  .avatar {
+    border-radius: 50%; /* Ensures the image is perfectly circular */
+    width: 96px; /* Adjusted to match the design */
+    height: 96px; /* Ensures consistent circular dimensions */
+    object-fit: cover; /* Ensures the image scales properly */
+    margin-top: 4px; /* Centers the image above the card */
+    border: 4px solid var(--color-variable-mediumgrey); /* Added border to blend with card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for image */
+  }
+  
+  .full-name {
+    font-weight: 700;
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    margin: 12px 0 4px; /* Adjusted margins for spacing */
+  }
+  
+  .location {
+    color: var(--color-variable-green);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .title-description {
+    font-size: 14px;
+    color: hsl(0, 0%, 70%);
+    margin-bottom: 24px; /* Added space between description and buttons */
+  }
+  
+  .buttons .button {
+    font-size: 14px;
+    background: var(--color-variable-lightgrey);
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    padding: 12px 16px; /* Added padding for consistent sizing */
+    border-radius: 8px;
+    margin: 14px 0; /* Vertical spacing between buttons */
+    display: block; /* Ensures buttons stack */
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none; /* For links, remove underline */
+  }
+  
+  .buttons .button:hover {
+    background: var(--color-variable-green); /* Adds hover effect */
+    color: var(--color-variable-darkgrey); /* Text color changes on hover */
+  }
+  
